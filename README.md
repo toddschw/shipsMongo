@@ -4,7 +4,7 @@
 
 ## API Documentation 
 
-Show ONE product that best matches a given length/width/height/weight query.  For example, the query below will return "Golf - Small Package":
+SHOW ONE product that best matches a given length/width/height/weight query.  For example, the query below will return "Golf - Small Package":
 
 ```
 curl -i -H "Accept: application/JSON" -H "Content-type: application/JSON" -X GET -d '{"length":48,"width":14,"height":12,"weight":42}' localhost:3000/api/query
@@ -14,6 +14,13 @@ Show ALL products
 ```
 curl -i -H "Accept: application/JSON" -X GET localhost:3000/api/products
 ```
+
+CREATE a product
+```
+curl -i -H "Accept: application/JSON" -H "Content-type: application/JSON" -X POST -d '{"name":"new product","type":"new type","length":10,"width":20,"height":30,"weight":40}' localhost:3000/api/products
+```
+
+
 
 ## Rake task to import products.json
 
