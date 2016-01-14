@@ -10,6 +10,11 @@ Show ONE product that best matches a given length/width/height/weight query.  Fo
 curl -i -H "Accept: application/JSON" -H "Content-type: application/JSON" -X GET -d '{"length":48,"width":14,"height":12,"weight":42}' localhost:3000/api/query
 ```
 
+Show ALL products
+```
+curl -i -H "Accept: application/JSON" -X GET localhost:3000/api/products
+```
+
 ## Rake task to import products.json
 
 ```
