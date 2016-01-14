@@ -33,6 +33,12 @@ UPDATE
 curl -i -H "Accept: application/JSON" -H "Content-type: application/JSON" -X PUT -d '{"length":10,"width":20,"height":30,"weight":5000}' localhost:3000/api/products/56969bb49b21b3e1fb000000
 ```
 
+DESTROY
+
++ Destroy a product, for example product with id 56969bb49b21b3e1fb000000
+```
+curl -i -H "Accept: application/JSON" -X DELETE localhost:3000/api/products/56969bb49b21b3e1fb000000
+```
 
 ## Rake task to import products.json
 
